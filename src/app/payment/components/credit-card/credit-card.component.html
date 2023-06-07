@@ -1,1 +1,46 @@
-<p>credit-card works!</p>
+<div class="credit-card">
+  <div class="flip">
+    <div class="front">
+      <div class="strip-bottom"></div>
+      <div class="strip-top"></div>
+      <svg class="logo" width="40" height="40" viewbox="0 0 17.5 16.2">
+        <path
+          d="M3.2 0l5.4 5.6L14.3 0l3.2 3v9L13 16.2V7.8l-4.4 4.1L4.5 8v8.2L0 12V3l3.2-3z"
+          fill="white"></path>
+      </svg>
+      <div class="investor">Investor</div>
+      <div class="chip">
+        <div class="chip-line" *ngFor="let i of [1, 2, 3, 4]"></div>
+        <div class="chip-main"></div>
+      </div>
+      <div class="wave">
+        <img src="./assets/images/contactless.png" alt="" />
+      </div>
+      <div class="card-number">
+        <span>{{
+          '12341234123412341' | mask : '9999 9999 9999 9999 9999'
+        }}</span>
+      </div>
+      <div class="end">
+        <span class="end-text">exp. end:</span
+        ><span class="end-date">11/22</span>
+      </div>
+      <div class="card-holder">mr Filip Vitas</div>
+    </div>
+    <div class="back">
+      <div class="strip-black"></div>
+      <div class="ccv">
+        <label>ccv</label>
+        <div>123</div>
+      </div>
+      <div class="terms">
+        <p>
+          This card is property of Test Bank, Colombia. Misuse is criminal
+          offence. If found, please return to Monzo Bank or to the nearest bank
+          with MasterCard logo.
+        </p>
+        <p>Use of this card is subject to the credit card agreement.</p>
+      </div>
+    </div>
+  </div>
+</div>
