@@ -1,0 +1,17 @@
+.payment {
+  width: min(100%, 500px);
+  &__form {
+    gap: 1rem;
+  }
+}
+
+:host ::ng-deep .p-calendar {
+  width: 100%;
+}
+
+.card {
+  padding: 2rem;
+  padding-top: 5rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

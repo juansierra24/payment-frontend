@@ -4,7 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
-import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { NgxMaskModule } from 'ngx-mask';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormServiceService } from './services/form-service.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,6 +16,8 @@ import { NgxMaskModule, IConfig } from 'ngx-mask';
     AppRoutingModule,
     ButtonModule,
     NgxMaskModule.forRoot(),
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
