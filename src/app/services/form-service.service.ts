@@ -7,12 +7,11 @@ import { Subject } from 'rxjs';
 })
 export class FormServiceService {
   paymentForm!: FormGroup;
-  paymentFormSubject: Subject<FormGroup> = new Subject<FormGroup>();
 
   constructor(private fb: FormBuilder) {
     this.createForm();
   }
-  createForm() {
+  private createForm() {
     this.paymentForm = this.fb.group({
       cardNumber: ['', Validators.required],
       cardName: ['', Validators.required],

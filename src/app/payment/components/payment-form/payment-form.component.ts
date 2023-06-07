@@ -1,6 +1,5 @@
 import { FormServiceService } from './../../../services/form-service.service';
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-payment-form',
   templateUrl: './payment-form.component.html',

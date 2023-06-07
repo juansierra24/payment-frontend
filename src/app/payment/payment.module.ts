@@ -9,8 +9,9 @@ import { NgxMaskModule } from 'ngx-mask';
 import { CalendarModule } from 'primeng/calendar';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { PaymentComponent } from './pages/payment/payment.component';
 @NgModule({
-  declarations: [CreditCardComponent, PaymentFormComponent],
+  declarations: [CreditCardComponent, PaymentFormComponent, PaymentComponent],
   imports: [
     CommonModule,
     PaymentRoutingModule,

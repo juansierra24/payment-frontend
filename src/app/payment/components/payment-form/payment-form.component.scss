@@ -1,8 +1,7 @@
 .payment {
   width: min(100%, 500px);
-  &__form {
-    gap: 1rem;
-  }
+  background-color: white;
+  font-size: 12px;
 }
 
 :host ::ng-deep .p-calendar {
@@ -11,7 +10,12 @@
 
 .card {
   padding: 2rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+:host ::ng-deep .p-inputtext {
+  height: 35px;
 }

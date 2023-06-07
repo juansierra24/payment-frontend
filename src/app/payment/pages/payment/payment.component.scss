@@ -1,0 +1,17 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.credit-card {
+  transform: translateY(20%);
+}
+
+.container {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.493)
+  );
+  padding-bottom: 2rem;
+}
