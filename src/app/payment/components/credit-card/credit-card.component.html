@@ -18,14 +18,17 @@
       </div>
       <div class="card-number">
         <span>{{
-          '12341234123412341' | mask : '9999 9999 9999 9999 9999'
+          (cardOptions ? cardOptions.cardNumber : '')
+            | mask : '9999 9999 9999 9999 9999'
         }}</span>
       </div>
       <div class="end">
         <span class="end-text">exp. end:</span
         ><span class="end-date">11/22</span>
       </div>
-      <div class="card-holder">{{ '' }}</div>
+      <div class="card-holder">
+        {{ cardOptions ? cardOptions.cardName : '' }}
+      </div>
     </div>
     <div class="back">
       <div class="strip-black"></div>
@@ -44,5 +47,3 @@
     </div>
   </div>
 </div>
-
-{{ cardOptions | json }}

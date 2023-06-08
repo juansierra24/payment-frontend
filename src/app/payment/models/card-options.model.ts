@@ -1,6 +1,6 @@
 export interface CardOptions {
-  cardHolderName: string;
+  cardName: string;
   cardNumber: string;
-  ccv: string;
-  expirationDate: Date;
+  cvv: string;
+  expirationDate: Date | null;
 }
