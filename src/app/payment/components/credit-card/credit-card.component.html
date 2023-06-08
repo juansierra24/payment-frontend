@@ -24,7 +24,9 @@
       </div>
       <div class="end">
         <span class="end-text">exp. end:</span
-        ><span class="end-date">11/22</span>
+        ><span class="end-date">{{
+          (cardOptions ? cardOptions.expirationDate : null) | cardExpireDate
+        }}</span>
       </div>
       <div class="card-holder">
         {{ cardOptions ? cardOptions.cardName : '' }}
@@ -34,7 +36,7 @@
       <div class="strip-black"></div>
       <div class="ccv">
         <label>ccv</label>
-        <div>123</div>
+        <div>{{ cardOptions ? cardOptions.cvv : '' }}</div>
       </div>
       <div class="terms">
         <p>

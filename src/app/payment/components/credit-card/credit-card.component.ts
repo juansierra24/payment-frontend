@@ -12,13 +12,16 @@ import {
   templateUrl: './credit-card.component.html',
   styleUrls: ['./credit-card.component.scss'],
 })
-export class CreditCardComponent implements OnInit, OnChanges {
-  @Input() cardOptions!: CardOptions;
+export class CreditCardComponent {
+  private _cardOptions!: CardOptions;
 
-  constructor() {}
+  @Input()
+  set cardOptions(value: CardOptions) {
+    this._cardOptions = value;
+    console.log(this._cardOptions.cvv);
+  }
 
-  ngOnInit(): void {}
-  ngOnChanges(changes: SimpleChanges): void {
-    this.cardOptions = changes['cardOptions'].currentValue;
+  get cardOptions() {
+    return this._cardOptions;
   }
 }

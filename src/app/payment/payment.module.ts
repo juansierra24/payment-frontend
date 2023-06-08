@@ -10,8 +10,14 @@ import { CalendarModule } from 'primeng/calendar';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { CardExpireDatePipe } from '../pipes/card-expire-date.pipe';
 @NgModule({
-  declarations: [CreditCardComponent, PaymentFormComponent, PaymentComponent],
+  declarations: [
+    CreditCardComponent,
+    PaymentFormComponent,
+    PaymentComponent,
+    CardExpireDatePipe,
+  ],
   imports: [
     CommonModule,
     PaymentRoutingModule,
