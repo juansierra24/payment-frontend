@@ -18,7 +18,6 @@ export class CreditCardComponent {
   @Input()
   set cardOptions(value: CardOptions) {
     this._cardOptions = value;
-    console.log(this._cardOptions.cvv);
   }
 
   get cardOptions() {
