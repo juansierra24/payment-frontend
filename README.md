@@ -1,7 +1,7 @@
 # Payment App - BlueCoding Challenge
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="./assets/images/logo.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="http://www.jkweddingcards.com/assets/images/logo.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
